@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ksuu\\Documents\\\u0433\u0433\u043F\u043A\\3 \u043A\u0443\u0440\u0441\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E\\\u041B\u0420\\\u041B\u04207\\z1-2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54E9D2F7-65A1-47CD-A4AE-D2F17E6008E4}|z1-2\\z1-2.csproj|c:\\users\\ksuu\\documents\\\u0433\u0433\u043F\u043A\\3 \u043A\u0443\u0440\u0441\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E\\\u043B\u0440\\\u043B\u04407\\z1-2\\z1-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54E9D2F7-65A1-47CD-A4AE-D2F17E6008E4}|z1-2\\z1-2.csproj|solutionrelative:z1-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ksuu\\Documents\\\u0433\u0433\u043F\u043A\\3 \u043A\u0443\u0440\u0441\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E\\\u041B\u0420\\\u041B\u04207\\z1-2\\z1-2\\Program.cs",
+              "RelativeDocumentMoniker": "z1-2\\Program.cs",
+              "ToolTip": "C:\\Users\\ksuu\\Documents\\\u0433\u0433\u043F\u043A\\3 \u043A\u0443\u0440\u0441\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E\\\u041B\u0420\\\u041B\u04207\\z1-2\\z1-2\\Program.cs",
+              "RelativeToolTip": "z1-2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T09:42:52.163Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
