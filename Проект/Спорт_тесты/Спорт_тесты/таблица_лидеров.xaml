@@ -1,0 +1,164 @@
+﻿<Window x:Class="Спорт_тесты.таблица_лидеров"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Таблица результатов" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        FontFamily="Century Gothic"
+        Background="#F8F9FA"
+        Icon="Assets/иконка.ico">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0"
+                 Text="ТАБЛИЦА Результатов"
+                 FontSize="24"
+                 FontWeight="Bold"
+                 Foreground="Black"
+                 Margin="0,0,0,20"
+                 HorizontalAlignment="Center"/>
+
+        <!-- Таблица -->
+        <DataGrid x:Name="LeaderboardGrid" 
+         Grid.Row="1"
+         AutoGenerateColumns="False"
+         IsReadOnly="True"
+         Background="White"
+         BorderBrush="#DEE2E6"
+         BorderThickness="1"
+         RowBackground="White"
+         AlternatingRowBackground="#F8F9FA"
+         FontSize="16"
+         HeadersVisibility="Column"
+         VerticalGridLinesBrush="#DEE2E6"
+         HorizontalGridLinesBrush="#DEE2E6"
+         GridLinesVisibility="All"
+         ColumnHeaderHeight="40"
+         RowHeight="35">
+
+            <DataGrid.Columns>
+                <!-- Место -->
+                <DataGridTextColumn Header="Номер" 
+                           Binding="{Binding Рейтинг}" 
+                           Width="*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#11b0e5"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontSize" Value="16"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="BorderBrush" Value="#DEE2E6"/>
+                            <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <!-- Пользователь -->
+                <DataGridTextColumn Header="Пользователь" 
+                   Binding="{Binding Логин}" 
+                   Width="2*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#11b0e5"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontSize" Value="16"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <!-- Центрируем заголовок -->
+                            <Setter Property="BorderBrush" Value="#DEE2E6"/>
+                            <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <!-- Центрируем содержимое -->
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <!-- Баллы -->
+                <DataGridTextColumn Header="Баллы" 
+                           Binding="{Binding Баллы}" 
+                           Width="*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#11b0e5"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontSize" Value="16"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="BorderBrush" Value="#DEE2E6"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Padding" Value="5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="BorderBrush" Value="#DEE2E6"/>
+                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                    <Setter Property="MinHeight" Value="40"/>
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+
+        <!-- Кнопка возврата -->
+        <Button Grid.Row="2"
+              Content="НА ГЛАВНУЮ"
+              Margin="0,20,0,0"
+              Width="150"
+              Height="40"
+              FontSize="16"
+              FontWeight="Bold"
+              Background="#11b0e5"
+              Foreground="White"
+              BorderThickness="0"
+              Click="HomeButton_Click"
+              HorizontalAlignment="Right"
+              Cursor="Hand">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.2" ShadowDepth="2"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

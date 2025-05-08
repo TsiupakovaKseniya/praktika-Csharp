@@ -1,0 +1,17 @@
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\bin\x64\Debug\Спорт_тесты.exe.config
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\bin\x64\Debug\Спорт_тесты.exe
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\bin\x64\Debug\Спорт_тесты.pdb
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.csproj.AssemblyReference.cache
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\регистрация.baml
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\авторизация.g.cs
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\регистрация.g.cs
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\App.g.cs
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты_MarkupCompile.cache
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты_MarkupCompile.lref
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\авторизация.baml
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.g.resources
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.Properties.Resources.resources
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.csproj.GenerateResource.cache
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.csproj.CoreCompileInputs.cache
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.exe
+D:\work\КП_C#_Ксюша\Спорт_тесты\Спорт_тесты\obj\x64\Debug\Спорт_тесты.pdb

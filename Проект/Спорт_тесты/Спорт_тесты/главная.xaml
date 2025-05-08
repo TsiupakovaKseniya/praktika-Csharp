@@ -1,0 +1,263 @@
+﻿<Window x:Class="Спорт_тесты.главная"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Спорт_тесты"
+        Title="Главная"
+        Width="1080"
+        Height="608"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFFAFAFA"
+        FontFamily="Century Gothic"
+        FontSize="14"
+        Icon="Assets/иконка.ico">
+
+    <Window.Resources>
+        <local:HalfSizeConverter x:Key="HalfConverter"/>
+    </Window.Resources>
+
+    <UniformGrid Rows="2" Columns="3">
+
+        <!-- Тайл 1: Лёгкая атлетика -->
+        <Grid Cursor="Hand"
+              Tag="Лёгкая атлетика"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <!-- вместо Image–контрола для фона используем ImageBrush -->
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Лёгкая атлетика_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/athletic.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Лёгкая атлетика"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Тайл 2: Настольный теннис -->
+        <Grid Cursor="Hand"
+              Tag="Настольный теннис"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Настольный теннис_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/tennis.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Настольный теннис"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Тайл 3: Плавание -->
+        <Grid Cursor="Hand"
+              Tag="Плавание"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Плавание_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/swim.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Плавание"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Тайл 4: Волейбол -->
+        <Grid Cursor="Hand"
+              Tag="Волейбол"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Волейбол_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/volley.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Волейбол"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Тайл 5: Футбол -->
+        <Grid Cursor="Hand"
+              Tag="Футбол"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Футбол_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/football.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Футбол"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Тайл 6: Баскетбол -->
+        <Grid Cursor="Hand"
+              Tag="Баскетбол"
+              MouseLeftButtonUp="Tile_MouseLeftButtonUp">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Баскетбол_bg.png"
+                            Stretch="UniformToFill"
+                            AlignmentX="Center"
+                            AlignmentY="Center"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="Assets/bascet.png"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,20"
+                   Width="{Binding ActualWidth,
+                           RelativeSource={RelativeSource AncestorType=Grid},
+                           Converter={StaticResource HalfConverter}}"
+                   Height="{Binding ActualHeight,
+                            RelativeSource={RelativeSource AncestorType=Grid},
+                            Converter={StaticResource HalfConverter}}"
+                   Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="0,10">
+                <TextBlock Text="Баскетбол"
+                           Foreground="Black"
+                           FontWeight="Bold"
+                           FontSize="36"
+                           TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+    </UniformGrid>
+</Window>
